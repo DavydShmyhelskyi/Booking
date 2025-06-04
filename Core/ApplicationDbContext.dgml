@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Amenity" Category="EntityType" Annotations="Relational:TableName: Amenities RelationshipDiscoveryConvention:NavigationCandidates: Microsoft.EntityFrameworkCore.Utilities.OrderedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" BaseClass="" Bounds="-225.02345123291,33.6111110153122,264.080014648438,141.920317340088" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Amenity" Name="Amenity" UseManualLocation="True" />
+    <Node Id="Amenity.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-205.02345123291,73.6112110153122,54.55,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id (int)" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Amenity.Name" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-120.473510894775,73.6112110153122,92.32,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Name (string)" MaxLength="None" Name="Name" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Amenity.Workspaces" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-205.023436584473,129.5713283554,224.08,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Workspaces (ICollection&lt;Workspace&gt;)" MaxLength="None" Name="Workspaces" PropertyAccessMode="PropertyAccessMode.Default" Type="ICollection&lt;Workspace&gt;" ValueGenerated="None" />
+    <Node Id="AmenityWorkspace" Category="EntityType" Annotations="RelationshipDiscoveryConvention:NavigationCandidates: Microsoft.EntityFrameworkCore.Utilities.OrderedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" BaseClass="" Bounds="108.228330281576,37.3717311324997,157.623337300618,141.920317340088" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="AmenityWorkspace" Name="AmenityWorkspace" />
+    <Node Id="AmenityWorkspace.AmenitiesId" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="128.228330281576,77.3718311324997,106.943333333333,25.96" Field="nofield" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="AmenitiesId (int)" MaxLength="None" Name="AmenitiesId" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="AmenityWorkspace.WorkspacesId" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="128.228334248861,133.331948472588,117.623333333333,25.96" Field="nofield" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="WorkspacesId (int)" MaxLength="None" Name="WorkspacesId" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="Booking" Category="EntityType" Annotations="Relational:TableName: Bookings RelationshipDiscoveryConvention:NavigationCandidates: Microsoft.EntityFrameworkCore.Utilities.OrderedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" BaseClass="" Bounds="296.011651611328,-14.1421934661942,362.056693115234,253.84052245636" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Booking" Name="Booking" />
+    <Node Id="Booking.EndTime" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="316.011654052734,137.778115464775,126.93,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="EndTime (DateTime)" MaxLength="None" Name="EndTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime" ValueGenerated="None" />
+    <Node Id="Booking.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="316.011651611328,25.8579065338058,54.55,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id (int)" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Booking.StartTime" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="472.941689656576,137.778128990166,131.403333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="StartTime (DateTime)" MaxLength="None" Name="StartTime" PropertyAccessMode="PropertyAccessMode.Default" Type="DateTime" ValueGenerated="None" />
+    <Node Id="Booking.Status" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="316.01165608724,193.738228990166,138.413333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Status (BookingStatus)" MaxLength="None" Name="Status" PropertyAccessMode="PropertyAccessMode.Default" Type="BookingStatus" ValueGenerated="None" />
+    <Node Id="Booking.UserEmail" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="316.011653645834,81.8180133834762,112.736666666667,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="UserEmail (string)" MaxLength="None" Name="UserEmail" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Booking.UserName" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="458.7483203125,81.8180154647751,116.106666666667,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="UserName (string)" MaxLength="None" Name="UserName" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Booking.Workspace" Category="Navigation Property" Bounds="400.561669718424,25.8579133834762,94.9766666666667,25.96" Dependent="" Field="" Inverse="Bookings" Label="Workspace (1)" Name="Workspace" Principal="Workspace" PropertyAccessMode="PropertyAccessMode.Default" Type="Workspace" />
+    <Node Id="Booking.WorkspaceId" Category="Property Foreign" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="525.538344726562,25.857909568779,112.53,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="WorkspaceId (int)" MaxLength="None" Name="WorkspaceId" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="Coworking" Category="EntityType" Annotations="Relational:TableName: Coworkings RelationshipDiscoveryConvention:NavigationCandidates: Microsoft.EntityFrameworkCore.Utilities.OrderedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" BaseClass="" Bounds="-219.240066935221,701.157976235283,216.870041453044,197.880549121094" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Coworking" Name="Coworking" UseManualLocation="True" />
+    <Node Id="Coworking.Address" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-199.240052286784,853.078425356377,103.133333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Address (string)" MaxLength="None" Name="Address" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Coworking.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-199.240019226074,741.15813727044,54.55,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id (int)" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Coworking.Name" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-114.690025482178,741.158076235283,92.32,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Name (string)" MaxLength="None" Name="Name" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Coworking.Workspaces" Category="Navigation Collection" Bounds="-199.240066935221,797.118281313408,98.6033333333333,25.96" Dependent="Workspace" Field="" Inverse="Coworking" Label="Workspaces (*)" Name="Workspaces" Principal="" PropertyAccessMode="PropertyAccessMode.Default" Type="ICollection&lt;Workspace&gt;" />
+    <Node Id="IModel" Category="Model" Annotations="BaseTypeDiscoveryConvention:DerivedTypes: System.Collections.Generic.Dictionary`2[System.Type,System.Collections.Generic.List`1[Microsoft.EntityFrameworkCore.Metadata.IConventionEntityType]] InversePropertyAttributeConvention:InverseNavigations: System.Collections.Generic.Dictionary`2[System.Type,System.Collections.Generic.SortedSet`1[System.Type]] NonNullableConventionState: System.Reflection.NullabilityInfoContext Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn Relational:MaxIdentifierLength: 63" Bounds="-245.02345123291,-54.1422934661941,1156.71680165609,973.180918891907" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" Label="ApplicationDbContext" ProductVersion="9.0.5" PropertyAccessMode="PropertyAccessMode.Default" />
+    <Node Id="Photo" Category="EntityType" Annotations="Relational:TableName: Photos RelationshipDiscoveryConvention:NavigationCandidates: Microsoft.EntityFrameworkCore.Utilities.OrderedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" BaseClass="" Bounds="672.16641862791,376.512389786784,219.52691772461,197.8804" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Photo" Name="Photo" UseManualLocation="True" />
+    <Node Id="Photo.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="692.166483732077,416.512489786784,54.55,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id (int)" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Photo.PhotoUrl" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="692.16641862791,472.472589786784,107.583333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="PhotoUrl (string)" MaxLength="None" Name="PhotoUrl" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Photo.Workspace" Category="Navigation Property" Bounds="776.716669685853,416.512538452149,94.9766666666667,25.96" Dependent="" Field="" Inverse="Photos" Label="Workspace (1)" Name="Workspace" Principal="Workspace" PropertyAccessMode="PropertyAccessMode.Default" Type="Workspace" />
+    <Node Id="Photo.WorkspaceId" Category="Property Foreign" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="692.166535001608,528.432689786784,112.53,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="WorkspaceId (int)" MaxLength="None" Name="WorkspaceId" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="Workspace" Category="EntityType" Annotations="Relational:TableName: Workspaces RelationshipDiscoveryConvention:NavigationCandidates: Microsoft.EntityFrameworkCore.Utilities.OrderedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" BaseClass="" Bounds="-27.0887735874152,323.276677033342,371.02969766286,315.145475683594" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Workspace" Name="Workspace" UseManualLocation="True" />
+    <Node Id="Workspace.Amenities" Category="Navigation Property" Bounds="-6.79576951980579,478.86386978997,89.39,25.96" Dependent="" Field="" Inverse="Workspaces" Label="Amenities (1)" Name="Amenities" Principal="" PropertyAccessMode="PropertyAccessMode.Default" Type="ICollection&lt;Amenity&gt;" />
+    <Node Id="Workspace.Bookings" Category="Navigation Collection" Bounds="0.0961006018520507,421.479256752861,84.29,25.96" Dependent="Booking" Field="" Inverse="Workspace" Label="Bookings (*)" Name="Bookings" Principal="" PropertyAccessMode="PropertyAccessMode.Default" Type="ICollection&lt;Booking&gt;" UseManualLocation="True" />
+    <Node Id="Workspace.Capacity" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="124.071657867432,419.738576214425,89.31,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Capacity (int)" MaxLength="None" Name="Capacity" PropertyAccessMode="PropertyAccessMode.Default" Type="int" UseManualLocation="True" ValueGenerated="None" />
+    <Node Id="Workspace.Coworking" Category="Navigation Property" Bounds="179.65620415368,363.276809091928,94.06,25.96" Dependent="" Field="" Inverse="Workspaces" Label="Coworking (1)" Name="Coworking" Principal="Coworking" PropertyAccessMode="PropertyAccessMode.Default" Type="Coworking" UseManualLocation="True" />
+    <Node Id="Workspace.CoworkingId" Category="Property Foreign" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-6.79577964305884,534.823969789971,116.993333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="CoworkingId (int?)" MaxLength="None" Name="CoworkingId" PropertyAccessMode="PropertyAccessMode.Default" Type="int?" UseManualLocation="True" ValueGenerated="None" />
+    <Node Id="Workspace.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-7.0887735874152,365.519130249024,54.55,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id (int)" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Workspace.Name" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="114.386100616456,475.698676214425,92.32,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Name (string)" MaxLength="None" Name="Name" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Workspace.Photos" Category="Navigation Collection" Bounds="77.4613074462915,363.469203491211,72.26,25.96" Dependent="Photo" Field="" Inverse="Workspace" Label="Photos (*)" Name="Photos" Principal="" PropertyAccessMode="PropertyAccessMode.Default" Type="ICollection&lt;Photo&gt;" />
+    <Node Id="Workspace.WorkspaceTypeId" Category="Property Foreign" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-6.79574306699939,592.462022567419,142.673333333333,25.96" Field="nofield" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="False" IsRequired="False" IsShadow="True" IsUnicode="True" Label="WorkspaceTypeId (int?)" MaxLength="None" Name="WorkspaceTypeId" PropertyAccessMode="PropertyAccessMode.Default" Type="int?" UseManualLocation="True" ValueGenerated="None" />
+    <Node Id="Workspace.WorkspaceTypeInfo" Category="Navigation Property" Bounds="140.197553690275,531.658776214425,140.51,25.96" Dependent="" Field="" Inverse="" Label="WorkspaceTypeInfo (1)" Name="WorkspaceTypeInfo" Principal="WorkspaceTypeInfo" PropertyAccessMode="PropertyAccessMode.Default" Type="WorkspaceTypeInfo" />
+    <Node Id="Workspace.WorkspaceTypeInfoId" Category="Property Foreign" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="165.877590345807,587.618876214425,158.063333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="WorkspaceTypeInfoId (int)" MaxLength="None" Name="WorkspaceTypeInfoId" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="WorkspaceType" Category="EntityType" Annotations="Relational:TableName: WorkspaceTypes RelationshipDiscoveryConvention:NavigationCandidates: Microsoft.EntityFrameworkCore.Utilities.OrderedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" BaseClass="" Bounds="75.4987045288086,753.007280503837,216.870165405273,141.920344042969" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="WorkspaceType" Name="WorkspaceType" UseManualLocation="True" />
+    <Node Id="WorkspaceType.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="95.4987045288086,793.007380434501,54.55,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id (int)" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="WorkspaceType.Name" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="180.048869934082,793.007380503838,92.32,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Name (string)" MaxLength="None" Name="Name" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="WorkspaceType.Workspaces" Category="Navigation Collection" Bounds="95.4987636311849,848.967524546806,98.6033333333334,25.96" Dependent="Workspace" Field="" Inverse="" Label="Workspaces (*)" Name="Workspaces" Principal="" PropertyAccessMode="PropertyAccessMode.Default" Type="ICollection&lt;Workspace&gt;" />
+    <Node Id="WorkspaceTypeInfo" Category="EntityType" Annotations="" BaseClass="" Bounds="480.933509285462,630.648958837891,216.870183919271,197.880444620768" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="WorkspaceTypeInfo" Name="WorkspaceTypeInfo" UseManualLocation="True" />
+    <Node Id="WorkspaceTypeInfo.DefaultCapacity" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="500.933679573548,782.569303458659,133.006666666667,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="DefaultCapacity (int?)" MaxLength="None" Name="DefaultCapacity" PropertyAccessMode="PropertyAccessMode.Default" Type="int?" ValueGenerated="None" />
+    <Node Id="WorkspaceTypeInfo.Description" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="500.933509285462,726.609203458658,120.876666666667,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Description (string)" MaxLength="None" Name="Description" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="WorkspaceTypeInfo.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="500.93368038735,670.64905941569,54.55,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id (int)" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="WorkspaceTypeInfo.Name" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="585.483693204733,670.64905883789,92.3200000000001,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Name (string)" MaxLength="None" Name="Name" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+  </Nodes>
+  <Links>
+    <Link Source="Amenity" Target="Amenity.Id" Category="Contains" />
+    <Link Source="Amenity" Target="Amenity.Name" Category="Contains" />
+    <Link Source="Amenity" Target="Amenity.Workspaces" Category="Contains" />
+    <Link Source="AmenityWorkspace" Target="Amenity" Category="Foreign Key" Annotations="" Bounds="48.0557519241284,106.465378377759,60.1725783574472,0.808097373486277" From="AmenityWorkspace.AmenitiesId" IsUnique="False" Label="1:*" LabelBounds="71.0785175344913,110.869427080763,14.0733333333333,15.96" Name="AmenityWorkspace -&gt; Amenity" To="Amenity.Id" />
+    <Link Source="AmenityWorkspace" Target="AmenityWorkspace.AmenitiesId" Category="Contains" />
+    <Link Source="AmenityWorkspace" Target="AmenityWorkspace.WorkspacesId" Category="Contains" />
+    <Link Source="AmenityWorkspace" Target="Workspace" Category="Foreign Key" Annotations="" Bounds="171.218878045471,179.292048472588,10.3705086912744,135.011062221259" From="AmenityWorkspace.WorkspacesId" IsUnique="False" Label="1:*" LabelBounds="180.404149694731,238.970752953992,14.0733333333334,15.96" Name="AmenityWorkspace -&gt; Workspace" To="Workspace.Id" />
+    <Link Source="Booking" Target="Booking.EndTime" Category="Contains" />
+    <Link Source="Booking" Target="Booking.Id" Category="Contains" />
+    <Link Source="Booking" Target="Booking.StartTime" Category="Contains" />
+    <Link Source="Booking" Target="Booking.Status" Category="Contains" />
+    <Link Source="Booking" Target="Booking.UserEmail" Category="Contains" />
+    <Link Source="Booking" Target="Booking.UserName" Category="Contains" />
+    <Link Source="Booking" Target="Booking.Workspace" Category="Contains" />
+    <Link Source="Booking" Target="Booking.WorkspaceId" Category="Contains" />
+    <Link Source="Booking" Target="Workspace" Category="Foreign Key" Annotations="" Bounds="300.716251271455,239.698328990166,66.457649887403,76.7736591529746" From="Booking.WorkspaceId" IsUnique="False" Label="1:*" LabelBounds="335.457229301868,279.394124968952,14.0733333333334,15.96" Name="Booking -&gt; Workspace" To="Workspace.Id" />
+    <Link Source="Coworking" Target="Coworking.Address" Category="Contains" />
+    <Link Source="Coworking" Target="Coworking.Id" Category="Contains" />
+    <Link Source="Coworking" Target="Coworking.Name" Category="Contains" />
+    <Link Source="Coworking" Target="Coworking.Workspaces" Category="Contains" />
+    <Link Source="IModel" Target="Amenity" Category="Contains" />
+    <Link Source="IModel" Target="AmenityWorkspace" Category="Contains" />
+    <Link Source="IModel" Target="Booking" Category="Contains" />
+    <Link Source="IModel" Target="Coworking" Category="Contains" />
+    <Link Source="IModel" Target="Photo" Category="Contains" />
+    <Link Source="IModel" Target="Workspace" Category="Contains" />
+    <Link Source="IModel" Target="WorkspaceType" Category="Contains" />
+    <Link Source="IModel" Target="WorkspaceTypeInfo" Category="Contains" />
+    <Link Source="Photo" Target="Photo.Id" Category="Contains" />
+    <Link Source="Photo" Target="Photo.PhotoUrl" Category="Contains" />
+    <Link Source="Photo" Target="Photo.Workspace" Category="Contains" />
+    <Link Source="Photo" Target="Photo.WorkspaceId" Category="Contains" />
+    <Link Source="Photo" Target="Workspace" Category="Foreign Key" Annotations="" Bounds="352.940587023679,476.402559878951,319.290957747645,2.76338161990367" From="Photo.WorkspaceId" IsUnique="False" Label="1:*" LabelBounds="505.566708071337,481.784250691708,14.0733333333333,15.96" Name="Photo -&gt; Workspace" To="Workspace.Id" />
+    <Link Source="Workspace" Target="Coworking" Category="Foreign Key" Annotations="" Bounds="-21.5639164305177,638.422152716936,47.1046679201787,55.855765554908" From="Workspace.CoworkingId" IsUnique="False" Label="1:*" LabelBounds="3.51731929922483,667.639399437872,14.0733333333333,15.96" Name="Workspace -&gt; Coworking" To="Coworking.Id" />
+    <Link Source="Workspace" Target="Workspace.Amenities" Category="Contains" />
+    <Link Source="Workspace" Target="Workspace.Bookings" Category="Contains" />
+    <Link Source="Workspace" Target="Workspace.Capacity" Category="Contains" />
+    <Link Source="Workspace" Target="Workspace.Coworking" Category="Contains" />
+    <Link Source="Workspace" Target="Workspace.CoworkingId" Category="Contains" />
+    <Link Source="Workspace" Target="Workspace.Id" Category="Contains" />
+    <Link Source="Workspace" Target="Workspace.Name" Category="Contains" />
+    <Link Source="Workspace" Target="Workspace.Photos" Category="Contains" />
+    <Link Source="Workspace" Target="Workspace.WorkspaceTypeId" Category="Contains" />
+    <Link Source="Workspace" Target="Workspace.WorkspaceTypeInfo" Category="Contains" />
+    <Link Source="Workspace" Target="Workspace.WorkspaceTypeInfoId" Category="Contains" />
+    <Link Source="Workspace" Target="WorkspaceType" Category="Foreign Key" Annotations="" Bounds="170.140178184989,638.422152716936,7.85113716809116,105.609894755175" From="Workspace.WorkspaceTypeId" IsUnique="False" Label="1:*" LabelBounds="178.065761956575,683.098827401765,14.0733333333334,15.96" Name="Workspace -&gt; WorkspaceType" To="WorkspaceType.Id" />
+    <Link Source="Workspace" Target="WorkspaceTypeInfo" Category="Foreign Key" Annotations="" Bounds="343.940924075445,587.912296119329,129.262663994908,74.5990594918343" From="Workspace.WorkspaceTypeInfoId" IsUnique="False" Label="1:*" LabelBounds="409.571946755038,607.51959650975,14.0733333333334,15.96" Name="Workspace -&gt; WorkspaceTypeInfo" To="WorkspaceTypeInfo.Id" />
+    <Link Source="WorkspaceType" Target="WorkspaceType.Id" Category="Contains" />
+    <Link Source="WorkspaceType" Target="WorkspaceType.Name" Category="Contains" />
+    <Link Source="WorkspaceType" Target="WorkspaceType.Workspaces" Category="Contains" />
+    <Link Source="WorkspaceTypeInfo" Target="WorkspaceTypeInfo.DefaultCapacity" Category="Contains" />
+    <Link Source="WorkspaceTypeInfo" Target="WorkspaceTypeInfo.Description" Category="Contains" />
+    <Link Source="WorkspaceTypeInfo" Target="WorkspaceTypeInfo.Id" Category="Contains" />
+    <Link Source="WorkspaceTypeInfo" Target="WorkspaceTypeInfo.Name" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+    <Category Id="EntityType" />
+    <Category Id="Foreign Key" />
+    <Category Id="Model" />
+    <Category Id="Navigation Collection" />
+    <Category Id="Navigation Property" />
+    <Category Id="Property Foreign" />
+    <Category Id="Property Optional" />
+    <Category Id="Property Primary" />
+    <Category Id="Property Required" />
+  </Categories>
+  <Properties>
+    <Property Id="AfterSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="Annotations" Description="Annotations" Group="Model Properties" DataType="System.String" />
+    <Property Id="BaseClass" Description="Base class" Group="Model Properties" DataType="System.String" />
+    <Property Id="BeforeSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="ChangeTrackingStrategy" Description="Change tracking strategy" Group="Model Properties" DataType="System.String" />
+    <Property Id="Dependent" Description="Dependent entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="Field" Description="Backing field" Group="Model Properties" DataType="System.String" />
+    <Property Id="From" Description="Target property" Group="Model Properties" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="Inverse" Description="Inverse entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsAbstract" Label="IsAbstract" Description="IsAbstract" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="IsAlternateKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsConcurrencyToken" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsForeignKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsPrimaryKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsRequired" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsShadow" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnicode" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnique" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="MaxLength" DataType="System.String" />
+    <Property Id="Name" Group="Model Properties" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="Principal" Description="Principal entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="ProductVersion" Label="Product Version" Description="EF Core product version" Group="Model Properties" DataType="System.String" />
+    <Property Id="PropertyAccessMode" Group="Property Flags" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="To" Description="Source property" Group="Model Properties" DataType="System.String" />
+    <Property Id="Type" Description="CLR data type" Group="Model Properties" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueGenerated" Group="Property Flags" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="EntityType" ValueLabel="True">
+      <Condition Expression="HasCategory('EntityType')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Required" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Required')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Property" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Property')" />
+      <Setter Property="Background" Value="#FF990000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Collection" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Collection')" />
+      <Setter Property="Background" Value="#FFFF3232" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Model" ValueLabel="True">
+      <Condition Expression="HasCategory('Model')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+</DirectedGraph>
